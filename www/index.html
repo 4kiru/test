@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="js/base.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<div data-role="page" id="introduction">
+  <div data-role="header">
+    <h1>Shopping</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <p>Our application will help you make your shopping more easier than before and sharing them with others!</p>
+    <a href="#mainScreen">Go to Page Two</a>
+    <a href="#smspage">Go to sms</a>
+  </div>
+
+</div> 
+
+<div data-role="page" id="mainScreen">
+  <div data-role="header">
+    <h1>Shopping</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <p>Your shopping list is below!</p>
+      
+      <ul id="list">
+          <!--Uzupełnia się automatycznie z funkcji addProduct()-->
+      </ul>
+      
+      <input type="text" id="inputProduct">
+      <button onclick="addProduct()">Confirm</button>
+      <button onclick="cleanProducts()">Clean</button>
+    
+  </div>
+</div> 
+    
+<!-- OKNO DIALOGOWE NA DODAWANIE PRODUKTÓW
+    <div data-role="page" data-dialog="true" id="addProduct">
+  <div data-role="header">
+    <h1>Add product!</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <p>Tell me what you want to buy!</p>
+      <input type="text" id="inputProduct">
+      <button onclick="addProduct()">Confirm</button>
+   
+  </div>
+-->
+
+<div data-role="page" id="smspage">
+  <div data-role="header">
+    <h1>Shopping</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+   <input id="numberTxt" placeholder="Enter mobile number" value="" type="tel" />
+    <textarea id="messageTxt" placeholder="Enter message"></textarea>
+    <input type="button" onclick="app.sendSms()" value="Send SMS" />
+      </div>
+
+</div>     
+    
+</body>
+</html>

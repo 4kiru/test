@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+		id          = "shopping list app"
+        version     = "1.0.0" >
+
+    <name>Shopping List</name>
+    <description>App containing shopping lists</description>
+    <author href="http://mypersonalwebsite.com" email="mateusz.salawa@gmail.com">
+        Mateusz Salawa
+	</author>
+	<platform name="android" />
+	
+	<plugin spec="https://github.com/cordova-sms/cordova-sms-plugin.git" source="git" />
+
+</widget>
